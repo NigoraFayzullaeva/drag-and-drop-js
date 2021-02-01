@@ -8,7 +8,109 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <h1 class="main-title">Kanban Board</h1>
+    <div class="drag-container">
+        <ul class="drag-list">
+            <li class="drag-column backlog-column">
+                <span class="header">
+                    <h1>Backlog</h1>
+                </span>
+                <div id="backlog-content" class="custom-scroll">
+                    <ul class="drag-item-list" id="backlog-list">
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                    </ul>
+                </div>
+                <div class="add-btn-group">
+                    <div class="add-btn">
+                        <span class="plus-sign">+</span>
+                        <span>Add Item</span>
+                    </div>
+                    <div class="add-btn solid">
+                        <span>Save Item</span>
+                    </div>
+                    <div class="add-container">
+                        <div class="add-item"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="drag-column progress-column">
+                <span class="header">
+                    <h1>Progress</h1>
+                </span>
+                <div id="progress-content" class="custom-scroll">
+                    <ul class="drag-item-list" id="progress-list">
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                    </ul>
+                </div>
+                <div class="add-btn-group">
+                    <div class="add-btn">
+                        <span class="plus-sign">+</span>
+                        <span>Add Item</span>
+                    </div>
+                    <div class="add-btn solid">
+                        <span>Save Item</span>
+                    </div>
+                    <div class="add-container">
+                        <div class="add-item"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="drag-column complete-column">
+                <span class="header">
+                    <h1>Complete</h1>
+                </span>
+                <div id="complete-content" class="custom-scroll">
+                    <ul class="drag-item-list" id="complete-list">
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                    </ul>
+                </div>
+                <div class="add-btn-group">
+                    <div class="add-btn">
+                        <span class="plus-sign">+</span>
+                        <span>Add Item</span>
+                    </div>
+                    <div class="add-btn solid">
+                        <span>Save Item</span>
+                    </div>
+                    <div class="add-container">
+                        <div class="add-item"></div>
+                    </div>
+                </div>
+            </li>
+            <li class="drag-column on-hold-column">
+                <span class="header">
+                    <h1>On-hold</h1>
+                </span>
+                <div id="on-hold-content" class="custom-scroll">
+                    <ul class="drag-item-list" id="on-hold-list">
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et hic quaerat qui, fugit repellat, saepe incidunt vero repudiandae consequuntur ad minima delectus illum accusantium? Voluptates dolorem in quibusdam officia quod?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis vero doloribus minima hic autem deserunt, nulla delectus ad ea ipsum assumenda neque recusandae maiores harum? Omnis sequi tenetur consequatur reiciendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis aut quibusdam placeat impedit in dicta cumque nesciunt! Laboriosam cumque ad vero totam! Accusantium expedita quos optio libero excepturi impedit itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sint ad, error tempore quod libero consequatur alias, repellat nesciunt dolore enim asperiores doloribus pariatur a quo ullam. Illo, possimus rem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni consequatur porro dolore fugiat. Ipsum earum distinctio quo modi error omnis reprehenderit, minima consequatur esse exercitationem mollitia, expedita vero harum asperiores.</li>
+                    </ul>
+                </div>
+                <div class="add-btn-group">
+                    <div class="add-btn">
+                        <span class="plus-sign">+</span>
+                        <span>Add Item</span>
+                    </div>
+                    <div class="add-btn solid">
+                        <span>Save Item</span>
+                    </div>
+                    <div class="add-container">
+                        <div class="add-item"></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
     <!-- Script -->
     <script src="script.js"></script>
 </body>
