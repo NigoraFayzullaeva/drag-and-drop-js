@@ -17,6 +17,7 @@ let backlogListArray = [];
 let progressListArray = [];
 let completeListArray = [];
 let onHoldListArray = [];
+let listArrays = [];
 
 // Drag Functionality
 
@@ -36,12 +37,21 @@ function getSavedColumns() {
   }
 }
 
+getSavedColumns();
+updateSavedColumns();
 // Set localStorage Arrays
 function updateSavedColumns() {
-  localStorage.setItem('backlogItems', JSON.stringify(backlogListArray));
-  localStorage.setItem('progressItems', JSON.stringify(progressListArray));
-  localStorage.setItem('completeItems', JSON.stringify(completeListArray));
-  localStorage.setItem('onHoldItems', JSON.stringify(onHoldListArray));
+  listArrays = [backlogListArray, progressList, completeListArray,
+    onHoldListArray
+  ];
+  const arrayName = ['backlog', 'progress', 'complete', 'onHold'];
+  arrayName.forEach((arrayName, index) => {
+    localStorage.setItem(`${arrayName}Items`, JSON.stringify(listArrays[index]));
+  });
+  // localStorage.setItem('backlogItems', JSON.stringify(backlogListArray));
+  // localStorage.setItem('progressItems', JSON.stringify(progressListArray));
+  // localStorage.setItem('completeItems', JSON.stringify(completeListArray));
+  // localStorage.setItem('onHoldItems', JSON.stringify(onHoldListArray));
 }
 
 // Create DOM Elements for each list item
@@ -72,4 +82,3 @@ function updateDOM() {
 
 
 }
-
